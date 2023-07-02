@@ -84,28 +84,28 @@ class Program
                     break;
                 }
         }
-                if (averageGrade == 4 && sportAchiv == true) 
-                {
-                    Console.WriteLine("Great job! You earned scholarship");
-                }
-                else switch (averageGrade)
+        if (averageGrade == 4 && sportAchiv == true)
+        {
+            Console.WriteLine("Great job! You earned scholarship");
+        }
+        else switch (averageGrade)
+            {
+                case 4:
                     {
-                        case 4:
-                            {
-                                Console.WriteLine("Good job!");
-                                break;
-                            }
-                        case 5:
-                        case 6:
-                            {
-                                Console.WriteLine("Great job! You earned scholarship");
-                                break;
-                            }
+                        Console.WriteLine("Good job!");
+                        break;
+                    }
+                case 5:
+                case 6:
+                    {
+                        Console.WriteLine("Great job! You earned scholarship");
+                        break;
+                    }
                 case > 6:
-                            {
-                                Console.WriteLine("It's imposible, you have to redo math");
-                                break;
-                            }
+                    {
+                        Console.WriteLine("It's imposible, you have to redo math");
+                        break;
+                    }
 
                     //default:
                     //    {
@@ -121,6 +121,7 @@ class Program
 
             }
     }
+}
 
       
        
