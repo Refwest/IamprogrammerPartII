@@ -61,8 +61,66 @@ class Program
         {
             Console.WriteLine("Doesn't matter what I have written, you can't read yet");
         }
+
+
+        //Switch statement
+
+        Console.WriteLine("What is your average grades rounded to integer?");
+        int averageGrade = int.Parse(Console.ReadLine());
+
+        Console.WriteLine("Do you have sport achievements? [yes or no]");
+        bool sportAchiv = (Console.ReadLine() == "yes");
+        switch (averageGrade)
+        {
+            case 1:
+                {
+                    Console.WriteLine("Sorry, see you next year");
+                    break;
+                }
+            case 2:
+            case 3:
+                {
+                    Console.WriteLine("You have to study more");
+                    break;
+                }
+        }
+                if (averageGrade == 4 && sportAchiv == true) 
+                {
+                    Console.WriteLine("Great job! You earned scholarship");
+                }
+                else switch (averageGrade)
+                    {
+                        case 4:
+                            {
+                                Console.WriteLine("Good job!");
+                                break;
+                            }
+                        case 5:
+                        case 6:
+                            {
+                                Console.WriteLine("Great job! You earned scholarship");
+                                break;
+                            }
+                case > 6:
+                            {
+                                Console.WriteLine("It's imposible, you have to redo math");
+                                break;
+                            }
+
+                    //default:
+                    //    {
+                    //        Console.WriteLine("It's imposible, you have to redo math");
+                    //        break;
+                    //    }   - If non case is fullfill than do"Console.WriteLine("It's imposible, you have to redo math");"
+
+
+
+
+
+
+
+            }
     }
-}
 
       
        
