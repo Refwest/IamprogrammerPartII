@@ -12,7 +12,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        //If Statements, Else Statements
+        //  !!If Statements, Else Statements!!
 
         Console.WriteLine("How old are you ?");
         int age = int.Parse(Console.ReadLine());
@@ -36,7 +36,7 @@ class Program
             }
         }
 
-        //Compound expression in If statement
+        ////    !!Compound expression in If statement!!
 
         Console.WriteLine("How old are you?");
         int age2 = int.Parse(Console.ReadLine());
@@ -63,7 +63,7 @@ class Program
         }
 
 
-        //Switch statement
+        ////    !!Switch statement!!
 
         Console.WriteLine("What is your average grades rounded to integer?");
         int averageGrade = int.Parse(Console.ReadLine());
@@ -107,20 +107,31 @@ class Program
                         break;
                     }
 
-                    //default:
+                    //  !!default:
                     //    {
                     //        Console.WriteLine("It's imposible, you have to redo math");
                     //        break;
                     //    }   - If non case is fullfill than do"Console.WriteLine("It's imposible, you have to redo math");"
+                    //   !! if(!(true))      !(true) = false !!
+
+
+
+                    //  !!Conditional and not operators!!
+
+                    Console.WriteLine("What is first number?");
+        double number1 = double.Parse(Console.ReadLine());
+
+        Console.WriteLine("What is first number?");
+        double number2 = double.Parse(Console.ReadLine());
+
+        Console.WriteLine((number1 > number2) ? "First number is greater than second one" : "Second number is greater than first one");
 
 
 
 
 
-
-
-            }
     }
+}
 }
 
       
